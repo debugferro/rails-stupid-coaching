@@ -1,6 +1,5 @@
 class QuestionsController < ApplicationController
   def ask
-  end
 
   def answer
     @question = params[:question]
@@ -17,13 +16,3 @@ def define_answer
     "I don't care, get dressed and go to work!"
   end
 end
-
-
-  # case @question
-  # when @question.match?(/going to work/)
-  #   'Great!'
-  # when @question.match?(/[?]\z/)
-  #   'Silly question, get dressed and go to work!'
-  # else
-  #   "I don't care, get dressed and go to work!"
-  # end
